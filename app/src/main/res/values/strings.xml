@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">android-task</string>
+    <string name="posts">Posts</string>
+    <string name="refresh">Refresh</string>
+    <string name="check_internet_connection">Please, check your internet connection!</string>
+    <string name="post_details">Post Details</string>
+    <string name="author_name">Author: %s</string>
+    <string name="email">Email: %s</string>
+</resources>

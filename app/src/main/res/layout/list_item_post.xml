@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="post"
+            type="com.budajovanovic.android_task.business.model.Post" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{clickListener}"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvPostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{post.title}"
+            android:textStyle="bold"
+            tools:text="Post Title" />
+
+        <TextView
+            android:id="@+id/tvPostDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@{post.body}"
+            tools:text="Post Description" />
+
+    </LinearLayout>
+</layout>
